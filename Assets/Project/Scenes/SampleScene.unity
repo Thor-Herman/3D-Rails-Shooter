@@ -606,6 +606,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 701055617}
     m_Modifications:
+    - target: {fileID: 8403730630748633457, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
+      propertyPath: positionPitchFactor
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 8405109818299259037, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
       propertyPath: m_Name
       value: PlayerShip
@@ -632,15 +636,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8408041996984889183, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8408041996984889183, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8408041996984889183, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8408041996984889183, guid: c6b6b0520a36d474fa1e929a325baffc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
