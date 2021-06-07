@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float _xSpeed = 20.0f, _ySpeed = 15.0f, _xRange = 6f, _minYRange = -3f, _maxYRange = 7f,
-    positionPitchFactor = -3f, controlPitchFactor = -10f, positionYawFactor = 3.5f, controlRollFactor = -13f;
+    private float _xSpeed = 25.0f, _ySpeed = 20.0f, _xRange = 15f, _minYRange = -5.5f, _maxYRange = 12f,
+    positionPitchFactor = -1f, controlPitchFactor = -15f, positionYawFactor = 2.5f, controlRollFactor = -15f;
     float horizontal, vertical;
 
     void Update()
