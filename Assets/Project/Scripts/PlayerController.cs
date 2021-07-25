@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,14 @@ public class PlayerController : MonoBehaviour
     private float _xSpeed = 25.0f, _ySpeed = 20.0f, _xRange = 15f, _minYRange = -5.5f, _maxYRange = 12f,
     positionPitchFactor = -1f, controlPitchFactor = -15f, positionYawFactor = 2.5f, controlRollFactor = -15f;
     float horizontal, vertical;
+    [SerializeField]
+    GameObject[] lasers;
 
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     void ProcessTranslation()
@@ -41,5 +45,22 @@ public class PlayerController : MonoBehaviour
         float roll = rollDueToControlThrow;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessFiring()
+    {
+        if (Input.GetButton("Fire")) SetLasersActive(true);
+        else SetLasersActive(false);
+    }
+
+    private void SetLasersActive(bool active)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            ParticleSystem ps = laser.GetComponent<ParticleSystem>();
+            if ( ps == null) continue;
+            ParticleSystem.EmissionModule emission = ps.emission; // Variable must be cached first
+            emission.enabled = active;
+        }
     }
 }
