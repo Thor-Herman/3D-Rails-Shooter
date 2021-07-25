@@ -5,12 +5,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float _xSpeed = 25.0f, _ySpeed = 20.0f, _xRange = 15f, _minYRange = -5.5f, _maxYRange = 12f,
-    positionPitchFactor = -1f, controlPitchFactor = -15f, positionYawFactor = 2.5f, controlRollFactor = -15f;
+    [Header("Movement Settings")]
+    [SerializeField] private float _xSpeed = 25.0f;
+    [SerializeField] private float _ySpeed = 20.0f;
+    [SerializeField] private float _xRange = 15.0f;
+    [SerializeField] private float _minYRange = -5.5f;
+    [SerializeField] private float _maxYRange = 12f;
+
+    [Header("Player Input-Based Rotation Tuning")]
+    [SerializeField] private float controlPitchFactor = -15f;
+    [SerializeField] private float controlRollFactor = -15f;
+
+    [Header("Player Position-Based Rotation Tuning")]
+    [SerializeField] private float positionPitchFactor = -1f;
+    [SerializeField] private float positionYawFactor = 2.5f;
+
+    [Tooltip("Add all player lasers here")][SerializeField] GameObject[] lasers;
+
     float horizontal, vertical;
-    [SerializeField]
-    GameObject[] lasers;
 
     void Update()
     {
@@ -58,7 +70,7 @@ public class PlayerController : MonoBehaviour
         foreach (GameObject laser in lasers)
         {
             ParticleSystem ps = laser.GetComponent<ParticleSystem>();
-            if ( ps == null) continue;
+            if (ps == null) continue;
             ParticleSystem.EmissionModule emission = ps.emission; // Variable must be cached first
             emission.enabled = active;
         }
