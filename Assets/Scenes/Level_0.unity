@@ -157,7 +157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3504476495551090335, guid: 50b862984ebc4e44a90f5da3e74e1297, type: 3}
+  hitMaterial: {fileID: 2100000, guid: d5460aa8b888caf43b7e0a8e8955d81d, type: 2}
   _scoreIncrementation: 10
+  _hp: 10
 --- !u!95 &255026862
 Animator:
   serializedVersion: 3
@@ -381,8 +383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cadb9c7ed3d8ae24e899c5f3baa93842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 0}
+  deathVFX: {fileID: 3504476495551090335, guid: 50b862984ebc4e44a90f5da3e74e1297, type: 3}
+  hitMaterial: {fileID: 2100000, guid: d5460aa8b888caf43b7e0a8e8955d81d, type: 2}
   _scoreIncrementation: 10
+  _hp: 10
 --- !u!1 &427860656
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3504476495551090335, guid: 50b862984ebc4e44a90f5da3e74e1297, type: 3}
+  hitMaterial: {fileID: 2100000, guid: d5460aa8b888caf43b7e0a8e8955d81d, type: 2}
   _scoreIncrementation: 10
+  _hp: 10
 --- !u!95 &1007760043
 Animator:
   serializedVersion: 3
@@ -934,7 +940,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3504476495551090335, guid: 50b862984ebc4e44a90f5da3e74e1297, type: 3}
+  hitMaterial: {fileID: 2100000, guid: d5460aa8b888caf43b7e0a8e8955d81d, type: 2}
   _scoreIncrementation: 10
+  _hp: 10
 --- !u!95 &1975954065
 Animator:
   serializedVersion: 3
