@@ -10,6 +10,7 @@ UserSettings/
 /[Mm]emoryCaptures/
 Assets/AssetStoreTools*
 Assets/Imported
+Assets/AutoSave
 
 
 # Visual Studio cache directory
@@ -42,3 +43,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/AutoSave.meta
