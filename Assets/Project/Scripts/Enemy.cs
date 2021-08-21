@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
         _scoreBoard = FindObjectOfType<ScoreBoard>();
         _meshRenderer = GetComponent<MeshRenderer>();
         _standardMaterial = _meshRenderer.material;
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>() as Rigidbody;
+        rb.useGravity = false;
     }
 
     public void OnParticleCollision(GameObject other)
