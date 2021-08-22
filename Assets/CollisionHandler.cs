@@ -7,7 +7,7 @@ public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float loadDelay = 1.0f;
     [SerializeField] ParticleSystem crashVFX;
-
+    
     void Start()
     {
         crashVFX.Stop(false);
@@ -17,11 +17,11 @@ public class CollisionHandler : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         StartCoroutine(EndGame());
-        Debug.Log(other.gameObject.name);
     }
     
     IEnumerator EndGame() {
         GetComponent<PlayerController>().enabled = false;
+        GetComponent<AudioSource>().Play();
         crashVFX.Play(false);
         GetComponent<MeshRenderer>().enabled = false;
         GameObject.Find("PlayerShip/Collider").SetActive(false);
