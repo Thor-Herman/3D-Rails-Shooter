@@ -25,7 +25,6 @@ public class Enemy : MonoBehaviour
 
     public void OnParticleCollision(GameObject other)
     {
-        IncreasePlayerScore();
         _hp--;
         if (_hp == 0) DestroyShip();
         else StartCoroutine(PlayHitAnimation());
@@ -37,6 +36,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void DestroyShip() {
+        IncreasePlayerScore();
         Instantiate(deathFX, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
