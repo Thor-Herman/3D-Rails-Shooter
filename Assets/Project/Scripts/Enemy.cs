@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathFX;
     [Tooltip("Material to display when the enemy is hit")][SerializeField] Material hitMaterial;
     private Material _standardMaterial;
     private MeshRenderer _meshRenderer;
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void DestroyShip() {
-        Instantiate(deathVFX, transform.position, Quaternion.identity);
+        Instantiate(deathFX, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 
