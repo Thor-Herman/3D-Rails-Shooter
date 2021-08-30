@@ -1146,6 +1146,7 @@ PlayableDirector:
     - a582ab4c3d7cac146b9a57b1761e827d: {fileID: 1222242412}
     - 5d42156c1bb81f24c9f88e432888450e: {fileID: 144385010}
     - 963ea053091cf4c47992d5d60dc6fe51: {fileID: 0}
+    - f16bb6d798675304c857a2a7b47f17d8: {fileID: 1012333911}
     - 4b084770587466945b42b7a9ea01b344: {fileID: 249613863}
     - cbf63a7ef99451247bf778d4f3bde985: {fileID: 1672149576}
     - 4f267ed84ecbef94a8cca74224bf32c0: {fileID: 1672149576}
@@ -1163,6 +1164,7 @@ PlayableDirector:
     - ad847f81a920a934fa4a930fed6ececd: {fileID: 0}
     - 79857eab42aff2a4eba49b390e6193f3: {fileID: 1743724759}
     - b42ae0db8e804674f8e2f16e1bfb66a5: {fileID: 45876815}
+    - f5c1cb24a38a7794e8bfc8cd71941ecf: {fileID: 1012333911}
     - e59c5989a7c3e944f90df1725d50fdd7: {fileID: 380511599}
 --- !u!4 &706765436
 Transform:
