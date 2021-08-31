@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7522900132854608477}
   - component: {fileID: 7515867592167028469}
   - component: {fileID: 4347673627816459525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Meistr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7498710254911487609}
   - component: {fileID: 7564134382124419165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7497966576109407145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7498748760197660437}
   - component: {fileID: 7563774045109954147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7498641212024565993}
   - component: {fileID: 7563373464101351943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
