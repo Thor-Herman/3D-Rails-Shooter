@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f25c0995465058a49b01f90231fb3418, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c03c153e5476a65498e0b36011861750, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c55f9bb38eaac49b85e17020cc04b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 0}
+  laserTransform: {fileID: 0}
   cameraObject: {fileID: 0}
   rayTravelLength: 250
