@@ -2850,6 +2850,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1168559163077895253}
     - target: {fileID: 1459578089521215999, guid: 52182d16e69f3ad4fbd4c251403ff808, type: 3}
+      propertyPath: rayTravelLength
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459578089521215999, guid: 52182d16e69f3ad4fbd4c251403ff808, type: 3}
       propertyPath: laserContainerTransform
       value: 
       objectReference: {fileID: 1168559163077895253}
