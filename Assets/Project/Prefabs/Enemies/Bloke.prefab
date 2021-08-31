@@ -274,7 +274,7 @@ MonoBehaviour:
   deathFX: {fileID: 3504476495551090335, guid: 50b862984ebc4e44a90f5da3e74e1297, type: 3}
   hitMaterial: {fileID: 2100000, guid: d5460aa8b888caf43b7e0a8e8955d81d, type: 2}
   _scoreIncrementation: 25
-  _hp: 3
+  _hp: 1
 --- !u!1 &1648288762146554477
 GameObject:
   m_ObjectHideFlags: 0
